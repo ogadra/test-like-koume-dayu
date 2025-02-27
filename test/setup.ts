@@ -6,7 +6,7 @@ expect.extend({
     return {
       pass: received === expected,
       message: () =>
-        `${expected}${
+        `チャンチャカチャンチャンチャチャンチャチャンチャン\n${expected}${
           isNot ? "ではない" : ""
         }かと思ったら～、${received} でした～。チクショー！！`,
     };
