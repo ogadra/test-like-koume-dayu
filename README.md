@@ -15,56 +15,30 @@ npm install
 ```bash
 $ npm run test
 
-> test
-> vitest
+...
 
+ FAIL  koume.test.ts > toBe
+Error: expect(received).toBe(expected)
 
- DEV  v3.0.7 /path/to/your/project
+チャンチャカチャンチャンチャンチャンチャンチャン
+チャンチャカチャンチャンチャンチャンチャンチャン
 
- ❯ koume.test.ts (2 tests | 2 failed) 4ms
-   × toBeLikeKomeDayu 3ms
-     → チャンチャカチャンチャンチャチャンチャチャンチャン
-2かと思ったら～、1 でした～。チクショー！！
-   × toBeLikeKomeDayu not 0ms
-     → チャンチャカチャンチャンチャチャンチャチャンチャン
-1ではないかと思ったら～、1 でした～。チクショー！！
+2 かと思ったら～、
 
-⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+1 でした～。
 
- FAIL  koume.test.ts > toBeLikeKomeDayu
-Error: チャンチャカチャンチャンチャチャンチャチャンチャン
-2かと思ったら～、1 でした～。チクショー！！
+チクショー！！
+
  ❯ koume.test.ts:4:13
       2|
-      3| test("toBeLikeKomeDayu", () => {
-      4|   expect(1).toBeLikeKomeDayu(2);
+      3| test("toBe", () => {
+      4|   expect(1).toBe(2);
        |             ^
       5| });
       6|
 
-⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+...
 
- FAIL  koume.test.ts > toBeLikeKomeDayu not
-Error: チャンチャカチャンチャンチャチャンチャチャンチャン
-1ではないかと思ったら～、1 でした～。チクショー！！
- ❯ koume.test.ts:8:17
-      6|
-      7| test("toBeLikeKomeDayu not", () => {
-      8|   expect(1).not.toBeLikeKomeDayu(1);
-       |                 ^
-      9| });
-     10|
-
-⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
-
-
- Test Files  1 failed (1)
-      Tests  2 failed (2)
-   Start at  16:04:32
-   Duration  210ms (transform 19ms, setup 14ms, collect 4ms, tests 4ms, environment 0ms, prepare 39ms)
-
- FAIL  Tests failed. Watching for file changes...
-       press h to show help, press q to quit
 ```
 
 ## License
