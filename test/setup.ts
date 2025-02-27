@@ -190,7 +190,7 @@ ${
   thrown
     ? `${utils.printReceived(error)}が投げられました`
     : "何も起きませんでした"
-} ～。
+}～。
 
 ${utils.BOLD_WEIGHT("チクショー！！")}
 `,
